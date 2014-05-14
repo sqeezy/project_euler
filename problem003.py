@@ -1,3 +1,5 @@
+import sys
+
 def prim_factors(n):
     result = []
 
@@ -19,6 +21,9 @@ def prim_factors(n):
     return result
 
 if __name__ == '__main__':
-    factors = prim_factors(600851475143)
-    print factors
-    print max(factors)
+    try:
+        number = int(raw_input("Enter a number to evaluate prime factors from...\n"))#600851475143
+    except ValueError:
+        exit("Not a integer!")
+    factors = prim_factors(number)
+    print "The prime factors are {}.".format(factors)
