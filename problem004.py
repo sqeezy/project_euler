@@ -1,9 +1,10 @@
 def isPalindrom(n):#recursive solution possible
     strN = str(n)
     result = True
-    for i in range(0,len(strN)/2+1):
+    for i in range(0,len(strN)/2):
         if strN[i]!=strN[-(i+1)]:
             result=False
+            break
     return result
 
 biggestPalindrom = 0
