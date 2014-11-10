@@ -20,6 +20,7 @@ for level in range(0,len(levels)):
         tryForBest = bestPathTillDepth[level-1]+levels[level][number]
         if(tryForBest>bestPathTillDepth[level]):
             bestPathTillDepth[level] = tryForBest
+#Way has to be saved
 
 print bestPathTillDepth
 print len(bestPathTillDepth)
